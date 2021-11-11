@@ -22,16 +22,16 @@ for num in updated_medical_data:
   if num == "$":
     num_records += 1
 
-#print("There are {num_records} medical records in the data".format(num_records=num_records))
+print("There are {num_records} medical records in the data".format(num_records=num_records))
 
 medical_data_split= updated_medical_data.split(';')
-#print(medical_data_split)
+print(medical_data_split)
 
 medical_records = []
 for medical_data in medical_data_split:
   medical_records.append(medical_data.split(','))
 
-#print(medical_records)
+print(medical_records)
 medical_records_clean = []
 for medical_record in medical_records:
   record_clean = []
@@ -67,12 +67,3 @@ for bmi in bmis:
 average_bmi = total_bmi / len(bmis)
 
 print("Average BMI: {}".format(average_bmi))
-
-
-
-
-
-
-
-
-
